@@ -42,12 +42,13 @@ struct VillagersView: View {
                  })
                     .onAppear {
                         if(self.firstpageload != true){
-                            for i in (1...80) {
+                            for i in (1...391) {
                                 self.load_vill(count: i)
                             }
                             self.firstpageload = true
                         }
                 }
+                .navigationBarTitle(Text(NSLocalizedString("島民", comment: "")))
             }
         }
     }

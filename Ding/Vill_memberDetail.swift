@@ -21,6 +21,7 @@ struct Vill_memberDetail: View {
             .scaledToFill()
             .clipped()
             
+            
             Text("性別: " + vill_member.gender)
             .bold()
             .padding()

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct BugsView: View {
     @State private var bugs_member = [BUGS]()
+    @State private var scale: CGFloat = 1
     @State private var count = 1
     @State private var firstpageload = false
     func load_bugs(count: Int) {
@@ -48,6 +49,7 @@ struct BugsView: View {
                             self.firstpageload = true
                         }
                 }
+                .navigationBarTitle(Text(NSLocalizedString("蟲子", comment: "")))
             }
         }
     }

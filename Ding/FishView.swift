@@ -12,6 +12,7 @@ import Foundation
 
 struct FishView: View {
     @State private var fish_member = [FISH]()
+    @State private var scale: CGFloat = 1
     @State private var count = 1
     @State private var firstpageload = false
     
@@ -51,6 +52,7 @@ struct FishView: View {
                             self.firstpageload = true
                         }
                 }
+            .navigationBarTitle(Text(NSLocalizedString("魚兒", comment: "")))
             }
         }
     }

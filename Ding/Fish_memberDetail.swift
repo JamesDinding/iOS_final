@@ -12,6 +12,8 @@ import Foundation
 
 struct Fish_memberDetail: View {
     var fish_member: FISH
+    @State private var scale: CGFloat = 1
+    @State private var big_enough: Bool = false
     var body: some View {
         VStack (alignment: .leading) {
             Text(fish_member.name.name_TWzh)
@@ -20,7 +22,13 @@ struct Fish_memberDetail: View {
 
             URLImage(url: fish_member.image_uri)
             .frame(width: 400, height: 200)
-            
+            .scaleEffect(scale)
+            .onLongPressGesture {
+                if (!self.big_enough) {
+                    self.scale *= 1.5
+                    self.big_enough = true
+                }
+            }
             .scaledToFill()
             .clipped()
             

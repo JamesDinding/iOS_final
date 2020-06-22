@@ -10,6 +10,8 @@ import SwiftUI
 
 struct Bugs_memberDetail: View {
     var bugs_member: BUGS
+    @State private var scale: CGFloat = 1
+    @State private var big_enough: Bool = false
     var body: some View {
         VStack (alignment: .leading) {
             Text(bugs_member.name.name_TWzh)
@@ -17,11 +19,16 @@ struct Bugs_memberDetail: View {
             .padding()
 
             URLImage(url: bugs_member.image_uri)
-            .frame(width: 400, height: 200)
-            
+            .frame(width: 400, height: 400)
             .scaledToFill()
             .clipped()
-            
+            .scaleEffect(scale)
+            .onLongPressGesture {
+                if(!self.big_enough){
+                    self.scale *= 1.5
+                    self.big_enough = true
+                }
+            }
             
             if(bugs_member.availability.time == "" || bugs_member.availability.time == nil) {
                 Text("每日出現時間: 24小時不打烊")
