@@ -39,6 +39,13 @@ struct ContentView: View {
                     Image("icon-villager-tabbar")
                     Text("villagers")
             }
+            
+            VideoView()
+            .tag(4)
+                .tabItem {
+                    Image("icon-cardboard-tabbar")
+                    Text("intro_video")
+            }
         
         }
     }

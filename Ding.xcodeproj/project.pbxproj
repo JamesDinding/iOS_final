@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,11 @@
 		578D91D324975BED00FF075E /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D91D224975BED00FF075E /* FishView.swift */; };
 		578D91D52497757D00FF075E /* BugsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D91D42497757D00FF075E /* BugsView.swift */; };
 		578D91D92497779F00FF075E /* TurnipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578D91D82497779F00FF075E /* TurnipsView.swift */; };
+		57C9FCF124A20058004D70AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 57C9FCF024A20058004D70AA /* Kingfisher */; };
+		57C9FCF324A22D1F004D70AA /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9FCF224A22D1F004D70AA /* SafariView.swift */; };
+		57C9FCF524A23395004D70AA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9FCF424A23395004D70AA /* SearchView.swift */; };
+		57C9FCF724A23B5E004D70AA /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9FCF624A23B5E004D70AA /* VideoView.swift */; };
+		57C9FCF924A23B71004D70AA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9FCF824A23B71004D70AA /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,10 @@
 		578D91D224975BED00FF075E /* FishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
 		578D91D42497757D00FF075E /* BugsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsView.swift; sourceTree = "<group>"; };
 		578D91D82497779F00FF075E /* TurnipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnipsView.swift; sourceTree = "<group>"; };
+		57C9FCF224A22D1F004D70AA /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		57C9FCF424A23395004D70AA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		57C9FCF624A23B5E004D70AA /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		57C9FCF824A23B71004D70AA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C9FCF124A20058004D70AA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,10 @@
 				5726A3B9249CF02000FA1240 /* VillagersView.swift */,
 				5726A3BB249CF11000FA1240 /* Vill_memberRow.swift */,
 				5726A3BD249CF12300FA1240 /* Vill_memberDetail.swift */,
+				57C9FCF224A22D1F004D70AA /* SafariView.swift */,
+				57C9FCF424A23395004D70AA /* SearchView.swift */,
+				57C9FCF624A23B5E004D70AA /* VideoView.swift */,
+				57C9FCF824A23B71004D70AA /* WebView.swift */,
 			);
 			path = Ding;
 			sourceTree = "<group>";
@@ -134,6 +148,7 @@
 			);
 			name = Ding;
 			packageProductDependencies = (
+				57C9FCF024A20058004D70AA /* Kingfisher */,
 			);
 			productName = Ding;
 			productReference = 578D91BB24975BD800FF075E /* Ding.app */;
@@ -164,6 +179,7 @@
 			);
 			mainGroup = 578D91B224975BD800FF075E;
 			packageReferences = (
+				57C9FCEF24A20058004D70AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 578D91BC24975BD800FF075E /* Products */;
 			projectDirPath = "";
@@ -193,19 +209,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				576F30C7249B2DEC0022BCB2 /* Fish.swift in Sources */,
+				57C9FCF524A23395004D70AA /* SearchView.swift in Sources */,
 				5726A3AC249C7D6E00FA1240 /* Bugs_memberDetail.swift in Sources */,
 				5726A3BE249CF12300FA1240 /* Vill_memberDetail.swift in Sources */,
 				578D91BF24975BD800FF075E /* AppDelegate.swift in Sources */,
 				578D91C124975BD800FF075E /* SceneDelegate.swift in Sources */,
+				57C9FCF924A23B71004D70AA /* WebView.swift in Sources */,
 				578D91D92497779F00FF075E /* TurnipsView.swift in Sources */,
 				5726A3BC249CF11000FA1240 /* Vill_memberRow.swift in Sources */,
 				578D91D324975BED00FF075E /* FishView.swift in Sources */,
 				576F30CB249B8FB70022BCB2 /* Fish_memberDetail.swift in Sources */,
 				578D91D52497757D00FF075E /* BugsView.swift in Sources */,
+				57C9FCF324A22D1F004D70AA /* SafariView.swift in Sources */,
 				576F30C9249B2DF80022BCB2 /* Bugs.swift in Sources */,
 				5726A3AE249C7D8400FA1240 /* Bugs_memberRow.swift in Sources */,
 				5726A3BA249CF02000FA1240 /* VillagersView.swift in Sources */,
 				5726A3B8249CEEBF00FA1240 /* Villagers.swift in Sources */,
+				57C9FCF724A23B5E004D70AA /* VideoView.swift in Sources */,
 				576F30CD249B8FC90022BCB2 /* Fish_memberRow.swift in Sources */,
 				578D91C324975BD800FF075E /* ContentView.swift in Sources */,
 				5726A3A8249C627100FA1240 /* URLImage.swift in Sources */,
@@ -400,6 +420,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57C9FCEF24A20058004D70AA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57C9FCF024A20058004D70AA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57C9FCEF24A20058004D70AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 578D91B324975BD800FF075E /* Project object */;
 }

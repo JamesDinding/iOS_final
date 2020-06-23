@@ -15,7 +15,7 @@ struct FishView: View {
     @State private var scale: CGFloat = 1
     @State private var count = 1
     @State private var firstpageload = false
-    
+    @State private var searchText = ""
     func load_fish(count: Int) {
         let urlStr = "https://acnhapi.com/v1/fish/"+String(count)
         if let url = URL(string: urlStr) {
