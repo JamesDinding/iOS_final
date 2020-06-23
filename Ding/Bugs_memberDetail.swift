@@ -19,7 +19,7 @@ struct Bugs_memberDetail: View {
             .padding()
 
             URLImage(url: bugs_member.image_uri)
-            .frame(width: 400, height: 400)
+            .frame(width: 300, height: 300)
             .scaledToFill()
             .clipped()
             .scaleEffect(scale)
@@ -64,6 +64,6 @@ struct Bugs_memberDetail: View {
             }
             
 
-        }
+        }.background(Image("BG").opacity(0.15))
     }
 }

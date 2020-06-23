@@ -67,6 +67,6 @@ struct Fish_memberDetail: View {
             }
             
 
-        }
+        }.background(Image("BG").opacity(0.15))
     }
 }

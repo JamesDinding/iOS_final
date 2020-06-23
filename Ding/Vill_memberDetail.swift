@@ -17,7 +17,7 @@ struct Vill_memberDetail: View {
             .padding()
 
             URLImage(url: vill_member.image_uri)
-            .frame(width: 400, height: 300)
+            .frame(width: 400, height: 350)
             .scaledToFill()
             .clipped()
             
@@ -34,6 +34,6 @@ struct Vill_memberDetail: View {
             .bold()
             .padding()
             
-        }
+        }.background(Image("BG").opacity(0.15))
     }
 }
