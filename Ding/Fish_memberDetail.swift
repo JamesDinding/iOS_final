@@ -8,7 +8,7 @@
 
 import SwiftUI
 import Foundation
-
+import KingfisherSwiftUI
 
 struct Fish_memberDetail: View {
     var fish_member: FISH
@@ -19,7 +19,8 @@ struct Fish_memberDetail: View {
             Text(fish_member.name.name_TWzh)
             .bold()
             .padding()
-
+//KFImage(URL(string: "https://example.com/image.png")!)
+            /*
             URLImage(url: fish_member.image_uri)
             .frame(width: 400, height: 200)
             .scaleEffect(scale)
@@ -31,7 +32,17 @@ struct Fish_memberDetail: View {
             }
             .scaledToFill()
             .clipped()
-            
+            */
+            KFImage(fish_member.image_uri)
+            .resizable()
+                .frame(width:400, height: 200)
+                .scaleEffect(scale)
+                .onLongPressGesture {
+                    if(!self.big_enough){
+                        self.scale*=1.5
+                        self.big_enough = true
+                    }
+            }
             
             if(fish_member.availability.time == "" || fish_member.availability.time == nil) {
                 Text("每日出現時間: 24小時不打烊")
